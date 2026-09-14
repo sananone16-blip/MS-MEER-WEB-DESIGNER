@@ -1763,3 +1763,24 @@ body {
         font-size: 16px;
     }
 }
+/* Remove menu on mobile */
+@media screen and (max-width: 768px) {
+  nav,.navbar,.nav-links,.menu {
+    display: none!important;
+  }
+ .menu-toggle,.hamburger, #menuIcon {
+    display: none!important;
+  }
+}
+.rating {
+  cursor: pointer;
+  font-size: 30px;
+}
+.star {
+  color: #ccc;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.star.active,.star:hover {
+  color: #ffc107;
+}
