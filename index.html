@@ -911,27 +911,31 @@ stars.forEach(star => {
   });
 
   star.addEventListener('mouseover', () => {
-    updateStars(star.dataset.value);
+    // hover effect
+    stars.forEach(s => {
+      s.classList.toggle('hover', s.dataset.value <= star.dataset.value);
+    });
   });
 
   star.addEventListener('mouseout', () => {
+    stars.forEach(s => s.classList.remove('hover'));
     updateStars(selectedRating);
   });
 });
 
 function updateStars(rating) {
   stars.forEach(star => {
-    if(star.dataset.value <= rating) {
-      star.classList.add('selected');
-    } else {
-      star.classList.remove('selected');
-    }
+    star.classList.toggle('selected', star.dataset.value <= rating);
   });
 }
 
 // Form submit
 document.getElementById('reviewForm').addEventListener('submit', (e) => {
   e.preventDefault();
+  if(!ratingInput.value){
+    alert("Please select a rating first!");
+    return;
+  }
   document.getElementById('reviewForm').style.display = 'none';
   document.getElementById('thankYou').style.display = 'block';
 });
