@@ -41,25 +41,32 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   /* ---------- STARS RATING - CLICKABLE ---------- */
-  const stars = document.querySelectorAll("#starRating .star");
+// ---------- STARS RATING - MOBILE + DESKTOP FIX ----------
+  const stars = document.querySelectorAll("#starRating.star");
   const ratingInput = document.getElementById("ratingValue");
-  
-  if (stars.length > 0) {
-    stars.forEach((star, index) => {
-      star.style.cursor = "pointer";
-      star.addEventListener("click", () => {
-        const val = parseInt(star.getAttribute("data-value")) || (index + 1);
-        if (ratingInput) ratingInput.value = val;
-        
-        stars.forEach(s => s.classList.remove("active"));
-        for (let i = 0; i < val; i++) {
-          if (stars[i]) stars[i].classList.add("active");
-        }
-        console.log("Rating selected:", val);
-      });
-    });
+
+  function setRating(val){
+    if(ratingInput) ratingInput.value = val;
+    stars.forEach(s => s.classList.remove("active"));
+    for(let i=0; i<val; i++){
+      if(stars[i]) stars[i].classList.add("active");
+    }
   }
 
+  if (stars.length > 0) {
+    stars.forEach((star, index) => {
+      const val = parseInt(star.getAttribute("data-value")) || (index+1);
+
+      // Desktop click
+      star.addEventListener("click", () => setRating(val));
+
+      // Mobile touch - bahut zaruri hai
+      star.addEventListener("touchstart", (e) => {
+        e.preventDefault();
+        setRating(val);
+      }, {passive: false});
+    });
+  }
   /* ---------- ORDER FORM ---------- */
   const orderForm = document.getElementById("orderForm");
   if (orderForm) {
