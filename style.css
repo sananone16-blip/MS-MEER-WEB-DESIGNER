@@ -1942,3 +1942,35 @@ body {
   cursor: pointer;
 }
 .review-box button[type="submit"]:hover { background: #0056b3 !important; }
+.review-box button[type="submit"]{
+  background: #007bff !important; 
+  color: white !important; 
+  padding: 16px !important; 
+  width: 100% !important;
+  border-radius: 10px !important; 
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  border: none !important;
+}
+.star-rating span.selected{ color: #ffc107 !important; }
+   /* ORDER PACK BUTTON BLUE */
+.order-btn, 
+button,
+a.btn {
+  background: #007bff !important; /* BLUE COLOR */
+  color: white !important;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.order-btn:hover,
+button:hover,
+a.btn:hover {
+  background: #0056b3 !important; /* Dark blue on hover */
+}
