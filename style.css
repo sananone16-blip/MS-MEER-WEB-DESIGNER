@@ -1798,3 +1798,20 @@ body {
 .star.active {
   color: #ffcc00;
 }
+/* MS MEER - Mobile Menu Hide + Stars Fix */
+@media (max-width: 768px){
+  #navMenu{
+    display:none!important;
+  }
+}
+
+.star-rating span, #starRating span,.rating span,.stars span{
+  cursor:pointer;
+  font-size:32px;
+  color:#ddd;
+  transition:0.2s;
+}
+.star-rating span.active,.star-rating span:hover,
+.rating span.active,.stars span.active{
+  color:#FFC107!important;
+}
