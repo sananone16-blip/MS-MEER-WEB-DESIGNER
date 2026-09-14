@@ -1790,3 +1790,11 @@ body {
     display: none!important;
   }
 }
+.star {
+  cursor: pointer;
+  color: #ccc;
+  font-size: 28px;
+}
+.star.active {
+  color: #ffcc00;
+}
