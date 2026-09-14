@@ -2186,3 +2186,62 @@ a.order-pack:hover {
   color: #444;
   margin-bottom: 25px;
    }
+/* ===== 1. ORDER PACK BUTTON 100% BLUE BUTTON ===== */
+a.order-pack {
+  display: block !important;
+  background: #2563eb !important; 
+  color: #ffffff !important;
+  text-align: center;
+  text-decoration: none !important;
+  border-radius: 12px !important;
+  padding: 16px 24px !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  width: 100% !important;
+  margin-top: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4) !important;
+}
+a.order-pack:hover {
+  background: #1d4ed8 !important; 
+}
+
+/* AGAR <button> use ho raha ho to ye bhi add karo */
+button.order-pack {
+  display: block !important;
+  background: #2563eb !important; 
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 12px !important;
+  padding: 16px 24px !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  width: 100%
+   /* ===== STARS FORCE 1 LINE ===== */
+.stars {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 5px !important;          /* gap bohot kam */
+  flex-wrap: nowrap !important; /* kabhi 2 line na ho */
+  font-size: 32px !important;   /* size chota */
+  width: 100% !important;
+  margin: 20px 0 10px !important;
+  white-space: nowrap !important;
+}
+
+.stars span {
+  color: #ddd !important;
+  cursor: pointer;
+  flex-shrink: 0 !important; /* chota na ho */
+  transition: all 0.2s ease;
+}
+
+.stars span:hover,
+.stars span.active,
+.stars span.selected {
+  color: #ffc107 !important; /* Yellow */
+  transform: scale(1.2);
+}
+
+/
