@@ -1856,32 +1856,35 @@ body {
   margin: 50px auto;     /* upar neeche 50px, left right auto = center */
   padding: 40px 30px;
   background:
-/* CLICKABLE STAR RATING */
-.review-form { padding: 80px 20px; background: #f8f9fa; text-align: center; }
-.review-form h2 { font-size: 32px; color: #007bff; margin-bottom: 40px; }
+/* CLICKABLE STAR RATING - FIXED */
+.review-form { padding: 60px 20px; background: #f8f9fa; text-align: center; }
+.review-form h2 { font-size: 28px; color: #1a1f36; margin-bottom: 30px; font-weight: 700; }
 
 .review-box {
-  max-width: 600px; margin: 0 auto; background: white;
-  padding: 40px 30px; border-radius: 15px;
-  box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+  max-width: 500px; margin: 0 auto; background: white;
+  padding: 35px 25px; border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
 }
 
-.star-rating { font-size: 45px; color: #ddd; cursor: pointer; margin-bottom: 10px; }
-.star-rating span { transition: 0.2s; display: inline-block; }
+.star-rating { font-size: 50px; color: #ddd; cursor: pointer; margin-bottom: 15px; user-select: none; }
+.star-rating span { transition: color 0.2s; display: inline-block; margin: 0 3px; }
 .star-rating span.hover,
-.star-rating span.selected { color: #ffc107; } /* yellow */
+.star-rating span.selected { color: #ffc107; } /* yellow stars */
 
-.rating-text { font-size: 18px; font-weight: 700; margin-bottom: 25px; }
+.rating-text { font-size: 18px; font-weight: 700; color: #1a1f36; margin-bottom: 25px; }
 
 .review-box input, .review-box textarea {
-  width: 100%; padding: 15px; margin-bottom: 20px;
-  border: 1px solid #ddd; border-radius: 8px; font-size: 16px;
-  font-family: Arial, sans-serif;
+  width: 100%; padding: 14px; margin-bottom: 18px;
+  border: 1px solid #ddd; border-radius: 10px; font-size: 16px;
+  box-sizing: border-box;
 }
 
+/* BLUE SUBMIT BUTTON */
 .review-box button {
-  background: #1a1f36; color: white; padding: 16px 50px;
-  border: none; border-radius: 8px; font-size: 18px;
+  background: #007bff; /* BLUE */
+  color: white; padding: 16px; 
+  border: none; border-radius: 10px; font-size: 18px;
   font-weight: 700; cursor: pointer; width: 100%;
+  transition: 0.3s;
 }
-.review-box button:hover { background: #007bff; }
+.review-box button:hover { background: #0056b3; }
