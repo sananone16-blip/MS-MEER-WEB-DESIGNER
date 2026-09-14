@@ -2086,3 +2086,26 @@ button:hover {
   gap: 12px !important;
   font-size: 50px !important;
 }
+/* ===== 1. ORDER PACK BUTTON BLUE ===== */
+a.order-pack {
+  display: block !important;
+  background: #2563eb !important; /* Professional Blue */
+  background-color: #2563eb !important;
+  color: #ffffff !important;
+  text-align: center;
+  text-decoration: none;
+  border: none !important;
+  border-radius: 12px !important;
+  padding: 16px 24px !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  width: 100% !important;
+  margin-top: 20px;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4) !important;
+}
+
+a.order-pack:hover {
+  background: #1d4ed8 !important; /* Dark Blue */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 
