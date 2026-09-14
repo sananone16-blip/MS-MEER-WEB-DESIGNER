@@ -1888,3 +1888,22 @@ body {
   transition: 0.3s;
 }
 .review-box button:hover { background: #0056b3; }
+/* BLUE SUBMIT BUTTON */
+.review-box button {
+  background: #007bff; /* Facebook blue */
+  color: white; 
+  padding: 16px; 
+  border: none; 
+  border-radius: 10px; 
+  font-size: 18px;
+  font-weight: 700; 
+  cursor: pointer; 
+  width: 100%;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.review-box button:hover { 
+  background: #0056b3; /* Dark blue on hover */
+  transform: translateY(-2px);
+}
