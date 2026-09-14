@@ -940,6 +940,26 @@ document.getElementById('reviewForm').addEventListener('submit', (e) => {
   document.getElementById('thankYou').style.display = 'block';
 });
 </script>
+    <script>
+const stars = document.querySelectorAll('.star-rating span');
+const ratingInput = document.getElementById('ratingValue');
+let selectedRating = 0;
+
+stars.forEach(star => {
+  star.addEventListener('click', () => {
+    selectedRating = star.dataset.value;
+    ratingInput.value = selectedRating;
+    stars.forEach(s => s.classList.toggle('selected', s.dataset.value <= selectedRating));
+  });
+});
+
+document.getElementById('reviewForm').addEventListener('submit', (e) => {
+  e.preventDefault();
+  if(!ratingInput.value){ alert("Please select stars first!"); return; }
+  document.getElementById('reviewForm').style.display = 'none';
+  document.getElementById('thankYou').style.display = 'block';
+});
+    </script>
 </body>
 </html>
 
