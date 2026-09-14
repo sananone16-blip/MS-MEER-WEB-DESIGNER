@@ -2066,3 +2066,23 @@ button:hover {
 }
 
 /* ===== 2. STARS
+/* FORCE BLUE BUTTON */
+.pricing-card button {
+  background: #2563eb !important;
+  background-color: #2563eb !important;
+  color: white !important;
+  border-radius: 12px !important;
+  padding: 16px !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  width: 100% !important;
+}
+
+/* FORCE STARS 1 LINE */
+.star-rating {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: center !important;
+  gap: 12px !important;
+  font-size: 50px !important;
+}
