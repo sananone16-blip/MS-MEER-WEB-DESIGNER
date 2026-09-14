@@ -182,3 +182,17 @@ document.querySelectorAll(".nav-menu a").forEach(function(link) {
         menuOverlay.classList.remove("active");
     });
 });
+   // Stars clickable fix
+const stars = document.querySelectorAll('.star');
+let currentRating = 0;
+
+stars.forEach((star, index) => {
+  star.addEventListener('click', () => {
+    currentRating = index + 1;
+    stars.forEach(s => s.classList.remove('active'));
+    for(let i=0; i<currentRating; i++){
+      stars[i].classList.add('active');
+    }
+    console.log("Rating:", currentRating);
+  });
+});
