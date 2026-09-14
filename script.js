@@ -196,3 +196,20 @@ stars.forEach((star, index) => {
     console.log("Rating:", currentRating);
   });
 });
+// Rating Stars Clickable
+document.addEventListener("DOMContentLoaded", () => {
+  const stars = document.querySelectorAll(".rating span, #starRating span,.stars span,.star-rating span");
+  let rating = 0;
+  stars.forEach((star, idx) => {
+    star.addEventListener("click", () => {
+      rating = idx + 1;
+      stars.forEach(s => s.classList.remove("active"));
+      for(let i=0; i<=idx; i++){
+        stars[i].classList.add("active");
+      }
+      console.log("Selected rating:", rating);
+      const input = document.querySelector("#ratingValue, #rating-input, input[name='rating']");
+      if(input) input.value = rating;
+    });
+  });
+});
