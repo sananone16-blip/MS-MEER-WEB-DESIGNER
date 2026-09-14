@@ -2280,3 +2280,20 @@ a.order-pack, .price-card a.order-pack {
   margin-top: 20px !important;
   box-sizing: border-box !important;
 }
+   
+.order-btn {
+  display: inline-block;
+  background-color: #007bff; /* blue color */
+  color: #ffffff !important;
+  padding: 10px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.order-btn:hover {
+  background-color: #0056b3; /* darker blue on hover */
+  transform: translateY(-2px);
+}
