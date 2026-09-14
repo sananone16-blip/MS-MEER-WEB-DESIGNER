@@ -1989,3 +1989,57 @@ button {
   cursor: pointer !important;
   transition: all 0.3s ease !important;
   box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3
+/* ===== 1. STARS 1 LINE MAI + BEAUTIFUL ===== */
+.star-rating {
+  display: flex !important;
+  justify-content: center;
+  gap: 8px;
+  font-size: 45px;
+  color: #ddd;
+  cursor: pointer;
+  margin-bottom: 10px;
+  flex-wrap: nowrap !important; /* 1 line mai rahenge */
+}
+
+.star-rating span {
+  transition: all 0.2s;
+}
+.star-rating span:hover,
+.star-rating span.selected { 
+  color: #ffc107; /* Yellow */
+  transform: scale(1.2);
+}
+
+/* BEAUTIFUL DESCRIPTION */
+.rating-text {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* ===== 2. ORDER PACK BUTTON BLUE FORCE ===== */
+button,
+a.btn,
+.order-btn,
+.pricing-card button {
+  background: #2563eb !important; /* Professional Blue */
+  color: white !important;
+  padding: 16px !important;
+  border: none !important;
+  border-radius: 12px !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  width: 100% !important;
+  cursor: pointer !important;
+  transition: 0.3s !important;
+}
+
+button:hover,
+a.btn:hover,
+.order-btn:hover,
+.pricing-card button:hover {
+  background: #1d4ed8 !important; /* Dark Blue */
+  transform: translateY(-2px);
+}
