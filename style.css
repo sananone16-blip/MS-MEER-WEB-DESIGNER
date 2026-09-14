@@ -1738,3 +1738,28 @@ body {
         line-height: 1.2;
     }
 }
+/* Desktop Menu */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: nowrap;
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px 20px;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .nav-menu a {
+        padding: 8px 5px;
+        font-size: 16px;
+    }
+}
