@@ -1373,21 +1373,8 @@ footer {
     margin-right: 8px;
 }
 
-.order-pack {
-    display: block;
-    width: 100%;
-    padding: 14px;
-    border-radius: 10px;
-    background: #25d366;
-    color: #fff;
-    font-weight: 900;
-    transition: .3s;
-}
 
-.order-pack:hover {
-    background: #1ebe5d;
-    transform: translateY(-2px);
-}
+
 
 /* =========================================
    NEW REVIEWS & FEEDBACK
