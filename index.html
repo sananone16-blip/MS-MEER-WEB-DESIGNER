@@ -449,27 +449,34 @@
 
 
 <!-- ================= REVIEWS & FEEDBACK ================= -->
- <section id="reviews" class="review-form-section">
-  <p class="small-heading">CLIENT FEEDBACK</p>
-  <h2>Reviews & Ratings</h2>
-  <p>Your feedback helps MS MEER WEB DESIGNER improve its service.</p>
+<!-- ===== CLICKABLE RATE & REVIEW FORM ===== -->
+<section class="review-form" id="reviews">
+  <div class="container">
+    <h2>Your Feedback Helps MS MEER Improve</h2>
+    
+    <form class="review-box" id="reviewForm">
+      
+      <div class="star-rating">
+        <span data-value="1">★</span>
+        <span data-value="2">★</span>
+        <span data-value="3">★</span>
+        <span data-value="4">★</span>
+        <span data-value="5">★</span>
+      </div>
+      <p class="rating-text">Select a rating</p>
+      <input type="hidden" name="rating" id="ratingValue" required>
 
-  <div class="review-box">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <textarea name="review" placeholder="Write your review..." rows="4" required></textarea>
 
+      <button type="submit">Submit Review</button>
+    </form>
 
-
-<!-- SAHI YE HAI: Sirf Span -->
-<div class="stars">
-  <span data-value="1">★</span>
-  <span data-value="2">★</span>
-  <span data-value="3">★</span>
-  <span data-value="4">★</span>
-  <span data-value="5">★</span>
-</div>
-        
-<input type="hidden" id="rating-value" name="rating">
-<input type="hidden" id="rating-value" name="rating">
-    <h3>Select a rating</h3>
+    <div id="thankYou" style="display:none;">
+      <h3>Thank you for your feedback! 🙏</h3>
+    </div>
+  </div>
+</section>
 <!-- ================= WHY CHOOSE US ================= -->
 
 <section class="why-section">
