@@ -1856,3 +1856,32 @@ body {
   margin: 50px auto;     /* upar neeche 50px, left right auto = center */
   padding: 40px 30px;
   background:
+/* CLICKABLE STAR RATING */
+.review-form { padding: 80px 20px; background: #f8f9fa; text-align: center; }
+.review-form h2 { font-size: 32px; color: #007bff; margin-bottom: 40px; }
+
+.review-box {
+  max-width: 600px; margin: 0 auto; background: white;
+  padding: 40px 30px; border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+}
+
+.star-rating { font-size: 45px; color: #ddd; cursor: pointer; margin-bottom: 10px; }
+.star-rating span { transition: 0.2s; display: inline-block; }
+.star-rating span.hover,
+.star-rating span.selected { color: #ffc107; } /* yellow */
+
+.rating-text { font-size: 18px; font-weight: 700; margin-bottom: 25px; }
+
+.review-box input, .review-box textarea {
+  width: 100%; padding: 15px; margin-bottom: 20px;
+  border: 1px solid #ddd; border-radius: 8px; font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.review-box button {
+  background: #1a1f36; color: white; padding: 16px 50px;
+  border: none; border-radius: 8px; font-size: 18px;
+  font-weight: 700; cursor: pointer; width: 100%;
+}
+.review-box button:hover { background: #007bff; }
