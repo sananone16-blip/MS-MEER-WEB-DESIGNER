@@ -2297,3 +2297,34 @@ a.order-pack, .price-card a.order-pack {
   background-color: #0056b3; /* darker blue on hover */
   transform: translateY(-2px);
 }
+
+<style>
+/* === BLUE BUTTON FIX === */
+.order-pack {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #007bff;
+  color: #ffffff !important;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.order-pack:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+/* For featured card - make it stand out more */
+.price-card.featured .order-pack {
+  background-color: #007bff;
+  box-shadow: 0 4px 12px rgba(0,123,255,0.4);
+}
+</style>
