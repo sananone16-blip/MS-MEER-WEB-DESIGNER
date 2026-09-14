@@ -1784,3 +1784,9 @@ body {
 .star.active,.star:hover {
   color: #ffc107;
 }
+/* Mobile par menu hide */
+@media (max-width: 768px) {
+  #navMenu {
+    display: none!important;
+  }
+}
