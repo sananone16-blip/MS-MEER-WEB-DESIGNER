@@ -1974,3 +1974,18 @@ button:hover,
 a.btn:hover {
   background: #0056b3 !important; /* Dark blue on hover */
 }
+/* FORCE ORDER PACK BUTTON BLUE */
+.pricing-card .order-btn,
+.pricing-card button,
+button {
+  background: #2563eb !important; /* Professional Blue */
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 12px !important;
+  padding: 16px 24px !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  width: 100% !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3
