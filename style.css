@@ -2136,3 +2136,11 @@ a.order-pack:hover {
   flex-wrap: nowrap !important;
   font-size: 50px !important;
    }
+a.order-pack {
+  background: #2563eb !important;
+  color: #ffffff !important;
+}
+   .star-rating {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+   }
