@@ -1196,86 +1196,68 @@ footer {
     font-weight: 900;
 }
 
-.reviews-section {
-    padding: 100px 0;
-    background: white;
-}
 
-.rating-summary {
-    max-width: 850px;
-    margin: 0 auto 40px;
+.reviews { background: white; }
+
+.rating-box {
+    max-width: 600px;
+    margin: auto;
+    background: #f5f7fa;
     padding: 30px;
+    border-radius: 12px;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.stars button {
+    background: transparent;
+    color: #ccc;
+    font-size: 38px;
+    padding: 0 5px;
+}
+
+.stars button.active { color: #f5b301; }
+
+#ratingText {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.review-list {
+    max-width: 800px;
+    margin: 30px auto 0;
     display: grid;
-    grid-template-columns: 220px 1fr;
-    gap: 30px;
-    align-items: center;
-    border-radius: 18px;
-    background: #f7f9fc;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
-}
-
-.rating-score {
-    text-align: center;
-}
-
-.rating-score strong {
-    display: block;
-    font-size: 52px;
-    line-height: 1;
-}
-
-.stars,
-.review-stars {
-    color: #f5b301;
-    letter-spacing: 3px;
-    font-size: 22px;
-}
-
-.rating-score span,
-.review-card span {
-    color: #697386;
-    font-size: 13px;
-}
-
-.rating-copy h3 {
-    margin-bottom: 8px;
-    font-size: 24px;
-}
-
-.rating-copy p {
-    color: #697386;
-}
-
-.reviews-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
+    gap: 15px;
 }
 
 .review-card {
-    padding: 28px;
-    border: 1px solid #e5e9f0;
-    border-radius: 16px;
-    background: #fff;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    background: #f5f7fa;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
 }
 
-.review-card p {
-    margin: 15px 0;
-    color: #4f596b;
-}
-
-.review-card strong {
-    display: block;
-    margin-bottom: 3px;
-}
-
-.footer-brand {
-    font-size: 24px;
-    font-weight: 900;
+.review-card .review-stars {
+    color: #f5b301;
     letter-spacing: 2px;
 }
 
+.contact { background: white; }
+.contact p { margin: 10px; }
+
+
+
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
 
 
 
@@ -1480,14 +1462,6 @@ footer {
     transform: translateY(-3px);
 }
 
-.feedback-email {
-    background: #fff;
-    color: #07111f;
-}
-
-.feedback-email:hover {
-    background: #edf6ff;
-}
 
 /* Contact email links */
 .contact-card a {
@@ -1805,15 +1779,7 @@ body {
   }
 }
 
-.star-rating span, #starRating span,.rating span,.stars span{
-  cursor:pointer;
-  font-size:32px;
-  color:#ddd;
-  transition:0.2s;
-}
-.star-rating span.active,.star-rating span:hover,
-.rating span.active,.stars span.active{
-  color:#FFC107!important;
+
 }
 /* ===== MS MEER FINAL FIX - Mobile Menu Hide + Stars ===== */
 @media (max-width: 768px){
@@ -1821,50 +1787,72 @@ body {
     display:none!important;
   }
 }
+/* STARS 1 LINE MEIN + CLICK PE YELLOW */
+.review-box {
+  max-width: 450px;
+  margin: 20px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
 
-.star-rating, #starRating {
-  display: flex;
-  gap: 8px;
+.stars {
+  display: flex; /* 1 line mein laane ke liye */
   justify-content: center;
-  font-size: 36px;
-  margin: 20px 0;
+  gap: 8px;
+  font-size: 40px;
+  margin: 10px 0 20px 0;
+}
+.stars span {
+  color: #ddd; /* grey star */
   cursor: pointer;
+  transition: color 0.2s;
+}
+.stars span.active,
+.stars span:hover {
+  color: #FFD700; /* yellow on hover/click */
 }
 
-.star-rating.star,
-#starRating.star {
-  cursor: pointer!important;
-  color: #ddd!important;
-  transition: all 0.2s ease;
-  user-select: none;
+/* INPUTS */
+.review-box input, .review-box textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
 }
 
-.star-rating.star:hover,
-#starRating.star:hover {
-  color: #ffcc00!important;
-  transform: scale(1.2);
+/* BLUE SUBMIT BUTTON */
+#submitBtn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  background: #2563eb; /* BLUE BUTTON */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
 }
-
-.star-rating.star.active,
-#starRating.star.active {
-  color: #FFC107!important;
+#submitBtn:hover {
+  background: #1d4ed8; /* dark blue on hover */
+    }
+#submitBtn {
+  background: #2563eb !important; /* BLUE */
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
 }
-/* Mobile Stars Fix */
-#starRating{
-  display:flex!important;
-  justify-content:center;
-  gap:12px!important;
-  pointer-events:auto!important;
-}
-#starRating.star{
-  display:inline-block!important;
-  pointer-events:auto!important;
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: transparent;
-  font-size: 38px!important;
-  padding: 5px;
-  color:#ddd!important;
-}
-#starRating.star.active{
-  color:#FFC107!important;
-}
+/* Review Box ko center karna */
+.review-box {
+  max-width: 650px;      /* zyada chaura na ho */
+  margin: 50px auto;     /* upar neeche 50px, left right auto = center */
+  padding: 40px 30px;
+  background:
