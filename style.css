@@ -2245,3 +2245,38 @@ button.order-pack {
 }
 
 /
+/* ===== NUCLEAR FIX - STARS + BUTTON ===== */
+div .stars, section .stars, .feedback-box .stars {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 4px !important;
+  flex-wrap: nowrap !important; 
+  font-size: 28px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+}
+div .stars span, section .stars span {
+  color: #ddd !important;
+  flex: 0 0 auto !important;
+}
+div .stars span.active, div .stars span.selected {
+  color: #ffc107 !important;
+}
+
+/* BUTTON KO BOX BANANE KE LIYE */
+a.order-pack, .price-card a.order-pack {
+  display: block !important;
+  background: #2563eb !important; 
+  background-color: #2563eb !important;
+  color: #ffffff !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  border-radius: 12px !important;
+  padding: 16px 24px !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  width: 100% !important;
+  margin-top: 20px !important;
+  box-sizing: border-box !important;
+}
