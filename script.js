@@ -213,3 +213,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+// Stars clickable
+document.addEventListener("DOMContentLoaded", function(){
+  const stars = document.querySelectorAll(".star");
+  const ratingInput = document.getElementById("ratingValue");
+  stars.forEach((star, index)=>{
+    star.addEventListener("click", ()=>{
+      const val = index+1;
+      if(ratingInput) ratingInput.value = val;
+      stars.forEach(s=>s.classList.remove("active"));
+      for(let i=0;i<val;i++) stars[i].classList.add("active");
+    });
+  });
+});
