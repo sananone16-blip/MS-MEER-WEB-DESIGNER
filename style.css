@@ -1815,3 +1815,37 @@ body {
 .rating span.active,.stars span.active{
   color:#FFC107!important;
 }
+/* ===== MS MEER FINAL FIX - Mobile Menu Hide + Stars ===== */
+@media (max-width: 768px){
+  #navMenu{
+    display:none!important;
+  }
+}
+
+.star-rating, #starRating {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  font-size: 36px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.star-rating.star,
+#starRating.star {
+  cursor: pointer!important;
+  color: #ddd!important;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.star-rating.star:hover,
+#starRating.star:hover {
+  color: #ffcc00!important;
+  transform: scale(1.2);
+}
+
+.star-rating.star.active,
+#starRating.star.active {
+  color: #FFC107!important;
+}
