@@ -1907,3 +1907,38 @@ body {
   background: #0056b3; /* Dark blue on hover */
   transform: translateY(-2px);
 }
+/* ===== REVIEW FORM FINAL CSS ===== */
+.review-form { padding: 60px 20px; background: #f8f9fa; }
+.review-form h2 { text-align:center; font-size: 28px; color: #1a1f36; margin-bottom: 30px; }
+
+.review-box {
+  max-width: 500px; margin: 0 auto; background: white;
+  padding: 35px 25px; border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+.star-rating { text-align:center; font-size: 50px; color: #ddd; cursor: pointer; margin-bottom: 15px; }
+.star-rating span { transition: color 0.2s; margin: 0 3px; }
+.star-rating span.selected { color: #ffc107; } /* yellow */
+
+.rating-text { text-align:center; font-size: 18px; font-weight: 700; color: #1a1f36; margin-bottom: 25px; }
+
+.review-box input, .review-box textarea {
+  width: 100%; padding: 14px; margin-bottom: 18px;
+  border: 1px solid #ddd; border-radius: 10px; font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* BLUE BUTTON - YE WALA IMPORTANT HAI */
+.review-box button[type="submit"] {
+  background: #007bff !important; 
+  color: white !important; 
+  padding: 16px !important; 
+  border: none !important; 
+  border-radius: 10px !important; 
+  font-size: 18px !important;
+  font-weight: 700 !important; 
+  width: 100% !important;
+  cursor: pointer;
+}
+.review-box button[type="submit"]:hover { background: #0056b3 !important; }
