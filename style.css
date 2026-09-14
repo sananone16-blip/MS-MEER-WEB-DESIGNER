@@ -2042,3 +2042,27 @@ a.btn:hover,
   background: #1d4ed8 !important; /* Dark Blue */
   transform: translateY(-2px);
 }
+/* ===== 1. ORDER PACK BUTTON 100% BLUE ===== */
+.pricing-card button, 
+.order-btn,
+button[onclick],
+button {
+  background: #2563eb!important; 
+  background-color: #2563eb!important;
+  color: #fff!important;
+  border: none!important;
+  border-radius: 12px!important;
+  padding: 16px!important;
+  font-size: 18px!important;
+  font-weight: 700!important;
+  width: 100%!important;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4)!important;
+}
+
+.pricing-card button:hover, 
+.order-btn:hover,
+button:hover {
+  background: #1d4ed8!important;
+}
+
+/* ===== 2. STARS
